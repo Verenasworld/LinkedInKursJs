@@ -12,8 +12,19 @@ ergebnis = a / b; ausgeben("Der Quotient");
 
 function ausgeben(ergebnisName) {
     ausgabe.innerHTML += ergebnisName + " lautet " + ergebnis + ".<br/>";
+}
+
+ausgabe.innerHTML += "<hr/>"
+
+ergebnis = addieren( a, b ); ausgeben("Das Ergebnis lautet: ");
+
+function addieren( x, y ) {
+    var z = x + y;
+    return z;
 
 }
+
+
 
 
 
