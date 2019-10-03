@@ -15,7 +15,7 @@ var ausgabe = document.getElementById("ausgabe");
                 ergebnis = x - y;
             }
 
-           if ( operator == "+" || operator == "-"){
+           if ( operator == "+" && operator == "-"){
                console.log("alles klar.")}
            else {
 
