@@ -9,11 +9,11 @@ eingabe.innerHTML = a + " und " + b;
 
 
 
-addieren.addEventListener("click" , function(){
+addieren.addEventListener("mouseover" , function(){
     rechne("+" ,a,b);
 });
 
-substrahieren.addEventListener("click",subtrahieren);
+substrahieren.addEventListener("mouseover",subtrahieren);
 
 function subtrahieren() {
     rechne("-",a,b);
