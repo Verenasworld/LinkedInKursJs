@@ -3,8 +3,8 @@
 var ausgabe = document.getElementById("ausgabe");
 var addieren = document.getElementById("addieren");
 var substrahieren = document.getElementById("subtrahieren");
-var a= 8;
-var b= 5;
+var a= ;
+var b= ;
 eingabe.innerHTML = a + " und " + b;
 
 
