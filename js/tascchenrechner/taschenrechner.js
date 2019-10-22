@@ -1,7 +1,7 @@
 "use strict";
 
-var tastenfeld = document.getElementsByClassName("tastenfeld");
-var display = document.getElementsByClassName("display");
+var tastenfeld = document.getElementById("tastenfeld");
+var display = document.getElementById("display");
 var zahl1 = 0, zahl2 = null;
 var operator = "";
 var aktuelleZahl = 1;
