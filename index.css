@@ -6,7 +6,7 @@
 
 }
 
-h3 {
+h2 {
     font-size: x-large;
     color: #888888;
     font-family: "Roboto Thin";
@@ -25,7 +25,7 @@ h3 {
             6px 6px 1px #eee;
 }
 
-.key_panel {
+.tastenfeld {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;

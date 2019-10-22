@@ -1,11 +1,14 @@
-var key_panel = document.getElementsByClassName("key_panel");
+"use strict";
+
+var tastenfeld = document.getElementsByClassName("tastenfeld");
 var display = document.getElementsByClassName("display");
 var zahl1 = 0, zahl2 = null;
 var operator = "";
 var aktuelleZahl = 1;
 
-createCalculator();
-function createCalculator() {
+createTaschenrechner();
+
+function createTaschenrechner(){
     createButton ( 7 );
     createButton ( 8 );
     createButton ( 9 );
@@ -29,50 +32,52 @@ function createCalculator() {
 
 }
 
-function createButton( zahl) {
-    var btn = document.createElement( "BUTTON");
+function createButton(zahl) {
+    let btn = document.createElement("Button");
     btn.value = zahl;
-    var t = document.createTextNode( zahl);
+    let t = document.createTextNode(zahl);
     btn.appendChild(t);
-    key_panel.appendChild(btn);
+    tastenfeld.appendChild(btn);
 
+
+    btn.addEventListener("click", function() {
+        if (this.value == "+" ||
+            this.value == "-" ||
+            this.value == "*" ||
+            this.value == "/") {
+            operator = this.value;
+            aktuelleZahl = 2;
+            zeigen();
+            return;
+
+        }
+        if (this.value == "=") {
+            rechne();
+            zeigen();
+            return;
+        }
+
+        if (this.value == "C") {
+            zahl1 = null;
+            zahl2 = null;
+            operator = "";
+            aktuelleZahl = 1;
+            zeigen();
+            return;
+        }
+
+        if (aktuelleZahl == 1) {
+            zahl1 = (zahl1 * 10) + (1 * this.value);
+        }
+        if (aktuelleZahl == 2) {
+            zahl2 = (zahl2 * 10) + (1 * this.value);
+        }
+        zeigen();
+
+    })
 }
 
-btn.addEventListener( "click", function () {
-    if (this.value == "+"||
-        this.value == "-"||
-        this.value == "*"||
-        this.value == "/" ){
-        operator = this.value;
-        aktuelleZahl = 2;
-        zeigen();
-        return;
 
-    }
-    if (this.value == "=" ){
-        rechne();
-        zeigen();
-        return;
-    }
-
-    if (this.value == "C"){
-        zahl1 = null;
-        zahl2 = null;
-        operator = "";
-        aktuelleZahl = 1;
-        zeigen();
-        return;
-    }
-
-    if (aktuelleZahl == 1){
-        zahl1 = (zahl1 * 10) + ( 1 * this.value );
-    }
-    if (aktuelleZahl == 2){
-        zahl2 = ( zahl2 * 10) + ( 1 * this.value);
-    }
-    zeigen();
-
-})
 
 function zeigen(){
     if ( zahl1 == null){
@@ -87,8 +92,8 @@ function zeigen(){
     }
 }
 
-function rechne() {
-    switch (operator) {
+function rechne(){
+    switch (operator){
         case "+":
             zahl1 = zahl1 + zahl2;
             break
