@@ -7,3 +7,7 @@ context.translate( canvas.width /2, canvas.height/ 2);
 
 draw();
 window.setInterval( draw, 1000);
+
+function getTime() {
+    
+}
