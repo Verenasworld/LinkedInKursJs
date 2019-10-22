@@ -1,7 +1,42 @@
-#ausgabe {
+.site-content {
     font-family: "Roboto Light";
     font-size: larger;
-    color: midnightblue;
+    background-color: white;
+
 
 
 }
+
+h2 {
+    font-size: x-large;
+    color: black;
+    font-family: "Roboto Thin";
+    margin-left: 70px;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    letter-spacing: .15em;
+    text-shadow:
+            1px 0px 1px #eee, 0px 1px 1px #ccc,
+            2px 1px 1px #eee, 1px 2px 1px #ccc,
+            3px 2px 1px #eee, 2px 3px 1px #ccc,
+            4px 3px 1px #eee, 3px 4px 1px #ccc,
+            5px 4px 1px #eee, 4px 5px 1px #ccc,
+            6px 5px 1px #eee, 5px 6px 1px #ccc,
+            6px 6px 1px #eee;
+}
+.content-intro {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
