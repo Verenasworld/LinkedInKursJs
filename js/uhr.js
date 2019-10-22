@@ -3,7 +3,7 @@ var context = canvas.getContext('2d');
 var radius = (canvas.width / 2) -1;
 var stundenRadians, minutenRadians, sekundenRadians;
 
- var gradient = context.createLinearGradient(0,0,170,0);
+var gradient = context.createLinearGradient(0,0,170,0);
  gradient.addColorStop("0", "lightcyan");
  gradient.addColorStop("0.5" ,"lightblue");
  gradient.addColorStop("1.0", "lightskyblue");
@@ -39,7 +39,7 @@ function  draw() {
 
 //Stunden
 context.beginPath();
-context.strokeStyle = 'black';
+context.strokeStyle = "black";
 context.lineWidth = 6;
 context.rotate( stundenRadians);
 context.moveTo(0,0);
@@ -65,6 +65,6 @@ context.rotate( sekundenRadians);
 context.moveTo(0,0);
 context.lineTo(canvas.width / 2 - 10, 0 );
 context.stroke();
-context.rotate( sekundenRadians );
+context.rotate( -sekundenRadians );
 
 }
