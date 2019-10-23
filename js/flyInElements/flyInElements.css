@@ -1,0 +1,14 @@
+.motivation{
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 1rem;
+    border-left: 10px solid #243d87;
+    margin: 1rem 0;
+    font-family: "Roboto Light";
+}
+
+daily {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Roboto Thin";
+}
