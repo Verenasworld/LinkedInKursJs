@@ -11,7 +11,7 @@ Array.prototype.forEach.call(document.querySelectorAll(".read-more-link"),functi
 
         }
         else {
-            document.getElementById("lang" + nummer ).setAttribute("style" ,"display:none");
+            document.getElementById("lang" + nummer ).setAttribute("style" ,"display:block");
             element.innerHTML = "verbergen";
             element.setAttribute("data-modus", "verbergen");
         }
