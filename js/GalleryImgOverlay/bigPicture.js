@@ -44,7 +44,7 @@ bigImage.addEventListener("click", function( event){
 
     actualBigImage %= images.length;
     showBigImage();
-})
+});
 
 bigImage.addEventListener("dblclick", closeOverlay);
 
