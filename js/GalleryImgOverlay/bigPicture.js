@@ -62,3 +62,4 @@ function showOverlay( element ){
     overlay.setAttribute("style","display:block;");
 }
 
+// TODO: debugging icon for closing overlay , ( fontAwesome Icon is not be show )
