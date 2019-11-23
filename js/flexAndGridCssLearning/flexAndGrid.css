@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+flex:0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+.item-1{
+    background: url("img/lily-1850750_1280.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #aec28b;
+}
+.item-2{
+    background-color: red;
+}
+.item-3{
+    background-color: blue;
+}
+.item-4{
+    background-color: black;
+}
+.item-5{
+    background-color: #00b9ff;
+}
+
+.item-6{
+    background-color: #ff6000;
+}
+@media screen  and (min-width: 600px) {
+    .container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "one one two three three"
+    "one one four five five"
+    "six seven seven five five"
+    "six eight nine nine ten"
+}
+.item-1{
+    background: linear-gradient(rgba(0,0 ,0,0.5),rgba(0,0,0,0.3)),
+url("img/lily-1850750_1280.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: one;
+    color: #aec28b;
+    font-size: 50px;
+}
+.item-2{
+    background-color: darkolivegreen;
+    grid-area: two;
+    font-size: 20px;
+}
+.item-3{
+    background-color: cornflowerblue;
+    grid-area: three;
+}
+.item-4{
+    background-color: chocolate;
+    grid-area: four;
+    font-size: 20px;
+}
+.item-5{
+    background-color: darkorchid;
+    grid-area: five;
+}
+.item-6{
+    background-color: indianred;
+    grid-area: six;
+}
+.item-7{
+    background-color: yellow;
+    grid-area: seven;
+}
+.item-8{
+    background-color: yellowgreen;
+    grid-area: eight;
+}
+.item-9{
+    background-color: cornsilk;
+    grid-area: nine;
+    color: black;
+}
+.item-10{
+    background-color: turquoise;
+    grid-area: ten;
+    font-size: 20px;
+}
+}
