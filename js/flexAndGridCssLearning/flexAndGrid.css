@@ -43,6 +43,8 @@ flex:0 0 300px;
     display: grid;
     height: 100vh;
         grid-gap: 10px;
+        background-color: black;
+
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
