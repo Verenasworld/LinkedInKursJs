@@ -42,8 +42,10 @@ flex:0 0 300px;
     .container{
     display: grid;
     height: 100vh;
-        grid-gap: 10px;
-        background-color: black;
+        /*grid-gap: 10px;*/
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        background-color: #b0e0e6;
 
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
